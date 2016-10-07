@@ -3,7 +3,7 @@
     <div class="card">
       <div class="content">
         <div class="card__header">
-          <img class="avatar" src=""></img>
+          <img class="avatar" src="../assets/profile.png"></img>
           <strong class="username" v-text="profile.name"></strong>
           <span class="screanname"><s>@</s><b v-text="profile.screanname"></b></span>
           <small class="time" v-text="timeline.time"></small>
@@ -33,8 +33,21 @@ li {
   padding: 9px 12px;
 }
 
+img.avatar {
+  float:left;
+  width: 48px;
+  height: 48px;
+
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
 .card__text-container {
   margin-left: 58px;
+}
+
+p.card-text {
+  margin: 0;
 }
 </style>
 
