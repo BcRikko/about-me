@@ -6,11 +6,11 @@
           <img class="avatar" src=""></img>
           <strong class="username" v-text="profile.name"></strong>
           <span class="screanname"><s>@</s><b v-text="profile.screanname"></b></span>
-          <small class="time" v-text="experience.time"></small>
+          <small class="time" v-text="timeline.time"></small>
         </div>
 
         <div class="card__text-container">
-          <p class="card-text" v-text="experience.text"></p>
+          <p class="card-text" v-text="timeline.text"></p>
         </div>
 
         <div class="card__footer">
@@ -40,6 +40,6 @@ li {
 
 <script>
 export default {
-  props: ['profile', 'experience']
+  props: ['profile', 'timeline']
 }
 </script>

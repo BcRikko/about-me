@@ -5,7 +5,7 @@
     <div class="app-container">
       <div class="spacer"></div>
       <profile :profile="profile"></profile><!--
-   --><time-line :profile="profile" :timeline="timeline"></time-line>
+   --><time-line :profile="profile" :timelines="timelines"></time-line>
     </div>
   </div>
 </template>
@@ -52,7 +52,7 @@ export default {
   data () {
     return {
       profile: data.profile,
-      timeline: data.timeline
+      timelines: data.timelines
     }
   }
 }

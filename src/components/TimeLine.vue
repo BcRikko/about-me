@@ -1,7 +1,7 @@
 <template>
   <div class="time-line">
     <ol>
-      <card v-for="experience in timeline" :profile="profile" :experience="experience"></card>
+      <card v-for="timeline in timelines" :profile="profile" :timeline="timeline"></card>
     </ol>
   </div>
 </template>
@@ -34,6 +34,6 @@ export default {
   components: {
     Card
   },
-  props: ['profile', 'timeline']
+  props: ['profile', 'timelines']
 }
 </script>

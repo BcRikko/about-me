@@ -4,9 +4,17 @@
     "screanname": "bc_rikko",
     "bio": "サーバ屋さんのフロントエンドなにがし/BlackEverydayCompany代表/JavaScript,C#,VBA...Pythonはじめました",
     "url": "http://kuroeveryday.blogspot.com",
-    "birth": "19xx/11/6"
+    "birth": "19xx/11/6",
+    "remarks": {
+      "certificates": [
+        {
+          "date": "",
+          "certificate": ""
+        }
+      ]
+    }
   },
-  "timeline": [
+  "timelines": [
     {
       "time": "2016/10/06",
       "text": "いろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろいろ"
