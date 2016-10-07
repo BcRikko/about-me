@@ -1,64 +1,59 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
-    <p>
-      To get a better understanding of how this boilerplate works, check out
-      <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
-      It is also recommended to go through the docs for
-      <a href="http://webpack.github.io/" target="_blank">Webpack</a> and
-      <a href="http://vuejs.github.io/vue-loader/" target="_blank">vue-loader</a>.
-      If you have any issues with the setup, please file an issue at this boilerplate's
-      <a href="https://github.com/vuejs-templates/webpack" target="_blank">repository</a>.
-    </p>
-    <p>
-      You may also want to checkout
-      <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
-      <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
+    <my-header></my-header>
+    <navbar></navbar>
+    <div class="app-container">
+      <div class="spacer"></div>
+      <profile :profile="profile"></profile><!--
+   --><time-line :profile="profile" :timeline="timeline"></time-line>
+    </div>
   </div>
 </template>
 
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+
+  color: #292f33;
+  background-color: #F5F8FA;
+  font-size: 14px;
+  line-height: 18px;
+
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.spacer {
+  height: 10px
+}
+</style>
+
 <script>
-import Hello from './components/Hello'
+import MyHeader from './components/Header'
+import Navbar from './components/Navbar'
+import Profile from './components/Profile'
+import TimeLine from './components/TimeLine'
+
+import data from '../static/data.json'
 
 export default {
   components: {
-    Hello
+    MyHeader,
+    Navbar,
+    Profile,
+    TimeLine
+  },
+  data () {
+    return {
+      profile: data.profile,
+      timeline: data.timeline
+    }
   }
 }
 </script>
-
-<style>
-html {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-#app {
-  color: #2c3e50;
-  margin-top: -100px;
-  max-width: 600px;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
-}
-
-#app a {
-  color: #42b983;
-  text-decoration: none;
-}
-
-.logo {
-  width: 100px;
-  height: 100px
-}
-</style>
