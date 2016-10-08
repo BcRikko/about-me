@@ -26,7 +26,7 @@
 <style scoped>
 li {
   list-style-type: none;
-  border: 1px solid rgb(225, 232, 237);
+  border: 1px solid #e1e8ed;
 }
 
 .content {
