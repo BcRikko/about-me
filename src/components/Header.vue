@@ -10,7 +10,7 @@
   </header>
 </template>
 
-<style>
+<style scoped>
 .header__back {
   background-color: #41B883;
   height: 460px;
@@ -31,10 +31,19 @@
   position: absolute;
   left: 10px;
   bottom: -87px;
+
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px rgba(136, 153, 166, 0.15);
+
 }
 
 .avatar__icon {
   height: 200px;
   width: 200px;
+
+  border-radius: 8px;
+
 }
 </style>

@@ -18,7 +18,7 @@ html, body {
   color: #292f33;
   background-color: #F5F8FA;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
 
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
