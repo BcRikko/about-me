@@ -2,19 +2,19 @@
   <li>
     <div class="card">
       <div class="content">
-        <div class="card__header">
-          <img class="avatar" src="../assets/profile.png"></img>
-          <strong class="username" v-text="profile.name"></strong>
-          <span class="screanname"><s>@</s><b v-text="profile.screanname"></b></span>
-          <small class="time" v-text="timeline.time"></small>
+        <div class="header">
+          <img class="header__avatar" src="../assets/profile.png"></img>
+          <strong class="header__username" v-text="profile.name"></strong>
+          <span class="header__screanname"><s>@</s><b v-text="profile.screanname"></b></span>
+          <small class="header__time" v-text="timeline.time"></small>
         </div>
 
-        <div class="card__text-container">
-          <p class="card-text" v-text="timeline.text"></p>
+        <div class="text">
+          <p class="text__content" v-text="timeline.text"></p>
         </div>
 
-        <div class="card__footer">
-          <div class="action__replay">
+        <div class="footer">
+          <div class="footer__action--replay">
             <button></button>
           </div>
         </div>
@@ -33,7 +33,7 @@ li {
   padding: 9px 12px;
 }
 
-img.avatar {
+img.header__avatar {
   float:left;
   width: 48px;
   height: 48px;
@@ -42,11 +42,11 @@ img.avatar {
   margin-right: 10px;
 }
 
-.card__text-container {
+.text {
   margin-left: 58px;
 }
 
-p.card-text {
+p.text__content {
   margin: 0;
 }
 </style>
