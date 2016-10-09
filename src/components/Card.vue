@@ -80,7 +80,7 @@ img.header__avatar {
 }
 .text__content {
   margin: 0;
-  white-space: pre;
+  white-space: pre-line;
 }
 
 /* footer */

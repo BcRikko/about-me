@@ -12,12 +12,12 @@
 
 <style scoped>
 .header__back {
-  background-color: #41B883;
-  height: 320px;
+  background-color: #323232;
+  height: 400px;
 }
 
 .header__container {
-  height: 320px;
+  height: 400px;
   width: 900px;
   margin: 0 auto;
 
