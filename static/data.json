@@ -5,10 +5,22 @@
     "bio": "サーバ屋さんのフロントエンドなにがし/BlackEverydayCompany代表/JavaScript,C#,VBA...Pythonはじめました",
     "location": "Ota-ku, Tokyo",
     "urls": [
-      "http://kuroeveryday.blogspot.com",
-      "https://github.com/BcRikko",
-      "http://www.slideshare.net/bc_rikko",
-      "https://soundcloud.com/bc_rikko/"
+      {
+        "link": "kuroeveryday.blogspot.com",
+        "href": "http://kuroeveryday.blogspot.com"
+      },
+      {
+        "link": "github.com",
+        "href": "https://github.com/BcRikko"
+      },
+      {
+        "link": "slideshare.net",
+        "href": "http://www.slideshare.net/bc_rikko"
+      },
+      {
+        "link": "soundcloud.com",
+        "href": "https://soundcloud.com/bc_rikko/"
+      }
     ],
     "birth": "19xx/11/6",
     "remarks": {

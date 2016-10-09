@@ -17,7 +17,7 @@
       <ul>
         <li v-for="url in profile.urls">
           <i class="fa fa-link"></i>
-          <a :href="url" target="_blank">{{url | removeProtocol}}</a>
+          <a :href="url.href" target="_blank" v-text="url.link"></a>
         </li>
       </ul>
     </div>
@@ -100,9 +100,6 @@ li {
 export default {
   props: ['profile'],
   filters: {
-    removeProtocol: (url) => {
-      return url.replace(/http(s)?:\/\//i, '')
-    },
     birthDay: (day) => {
       const splitDay = day.split('/')
       return `誕生日 ${splitDay[0]}年${splitDay[1]}月${splitDay[2]}日`
