@@ -5,8 +5,8 @@
       </div><!--
    --><div class="profile-navbar">
         <ul>
-          <li class="profile-navbar--active"><a href="/"><span>経歴</span></a></li>
-          <li><a href="/"><span>作ったもの</span></a></li>
+          <li class="profile-navbar--active"><router-link to="/"><a><span>経歴</span></a></router-link></li>
+          <li><router-link to="products"><a><span>作ったもの</span></a></router-link></li>
         </ul>
       </div>
     </div>

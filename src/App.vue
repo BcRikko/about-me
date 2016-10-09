@@ -5,48 +5,17 @@
     <navbar></navbar>
     <div class="app-container">
       <div class="spacer"></div>
-      <profile :profile="profile"></profile><!--
-   --><time-line :profile="profile" :timelines="timelines"></time-line>
+      <profile :profile="data.profile"></profile><!--
+   --><router-view :data="data"></router-view>
     </div>
   </div>
 </template>
-
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-
-  color: #292f33;
-  background-color: #F5F8FA;
-  font-size: 14px;
-  line-height: 20px;
-
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-
-.app-container {
-  width: 90%;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.spacer {
-  height: 10px
-}
-
-.hidden {
-  visibility: hidden;
-  position: absolute!important;
-  height: 1px!important;
-}
-</style>
 
 <script>
 import Topbar from './components/Topbar'
 import MyHeader from './components/Header'
 import Navbar from './components/Navbar'
 import Profile from './components/Profile'
-import TimeLine from './components/TimeLine'
 
 import data from '../static/data.json'
 
@@ -55,13 +24,11 @@ export default {
     Topbar,
     MyHeader,
     Navbar,
-    Profile,
-    TimeLine
+    Profile
   },
   data () {
     return {
-      profile: data.profile,
-      timelines: data.timelines
+      data: data
     }
   }
 }
