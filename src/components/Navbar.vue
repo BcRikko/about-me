@@ -5,8 +5,8 @@
       </div><!--
    --><div class="profile-navbar">
         <ul>
-          <li class="profile-navbar--active"><router-link to="/"><a><span>経歴</span></a></router-link></li>
-          <li><router-link to="products"><a><span>作ったもの</span></a></router-link></li>
+          <router-link tag="li" to="/" exact><a><span>経歴</span></a></router-link>
+          <router-link tag="li" to="/products"><a><span>作ったもの{{active}}</span></a></router-link>
         </ul>
       </div>
     </div>
@@ -56,7 +56,7 @@ li > a {
 }
 li:hover,
 li > a:hover,
-.profile-navbar--active {
+.router-link-active {
   height: 46px;
   color: #7708a3;
   border-bottom: 5px solid #7708a3;

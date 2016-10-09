@@ -6,7 +6,7 @@
           <img class="header__avatar" src="../assets/profile.png"></img>
           <strong class="header__username" v-text="profile.name"></strong>
           <span class="header__screanname"><s>@</s><b v-text="profile.screanname"></b></span>
-          <small class="header__time" v-text="timeline.time"></small>
+          <small class="header__date" v-text="timeline.date"></small>
         </div>
 
         <div class="text">
@@ -63,14 +63,14 @@ img.header__avatar {
 }
 
 /* screanname */
-.header__screanname, .header__time {
+.header__screanname, .header__date {
   font-size: 13px;
   color: #8899a6;
 }
 .header__screanname > s{
   text-decoration: none;
 }
-.header__time::before {
+.header__date::before {
   content: "\00b7";
 }
 
