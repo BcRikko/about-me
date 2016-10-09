@@ -109,12 +109,6 @@ img.header__avatar {
 .footer__heart:hover i {
   color: #e81c4f;
 }
-
-.hidden {
-  visibility: hidden;
-  position: absolute!important;
-  height: 1px!important;
-}
 </style>
 
 <script>

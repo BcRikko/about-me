@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <topbar></topbar>
     <my-header></my-header>
     <navbar></navbar>
     <div class="app-container">
@@ -32,9 +33,16 @@ html, body {
 .spacer {
   height: 10px
 }
+
+.hidden {
+  visibility: hidden;
+  position: absolute!important;
+  height: 1px!important;
+}
 </style>
 
 <script>
+import Topbar from './components/Topbar'
 import MyHeader from './components/Header'
 import Navbar from './components/Navbar'
 import Profile from './components/Profile'
@@ -44,6 +52,7 @@ import data from '../static/data.json'
 
 export default {
   components: {
+    Topbar,
     MyHeader,
     Navbar,
     Profile,
