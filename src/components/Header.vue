@@ -18,7 +18,7 @@
 
 .header__container {
   height: 460px;
-  width: 980px;
+  width: 900px;
   margin: 0 auto;
 
   position: relative;

@@ -25,7 +25,7 @@ html, body {
 
 .app-container {
   width: 90%;
-  max-width: 980px;
+  max-width: 900px;
   margin: 0 auto;
 }
 

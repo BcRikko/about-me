@@ -9,13 +9,17 @@
       <i class="fa fa-map-marker"></i>
       <span v-text="profile.location"></span>
     </div>
-    <div class="profile__url">
-      <i class="fa fa-link"></i>
-      <a :href="profile.url" target="_blank">{{profile.url | removeProtocol}}</a>
-    </div>
     <div class="profile__birthday">
       <i class="fa fa-birthday-cake"></i>
       <span>{{profile.birth | birthDay}}</span>
+    </div>
+    <div class="profile__url">
+      <ul>
+        <li v-for="url in profile.urls">
+          <i class="fa fa-link"></i>
+          <a :href="url" target="_blank">{{url | removeProtocol}}</a>
+        </li>
+      </ul>
     </div>
     <div class="profile__certificates">
       <ul>
@@ -63,6 +67,14 @@ a:hover {
   text-decoration: underline;
 }
 
+ul {
+  margin-top: 5px;
+  padding: 0;
+  list-style-type: none;
+}
+li {
+  margin-bottom: 2px;
+}
 .profile__name {
   font-size: 24px;
 }
@@ -78,17 +90,9 @@ a:hover {
   /*word-break: break-all;*/
 }
 
-.profile__certificates {
+.profile__url, .profile__certificates {
   margin-top: 5px;
   border-top: 1px solid #e1e8ed;
-}
-.profile__certificates > ul {
-  margin-top: 5px;
-  padding: 0;
-  list-style-type: none;
-}
-.profile__certificates li {
-  margin-bottom: 2px;
 }
 </style>
 

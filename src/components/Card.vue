@@ -14,8 +14,23 @@
         </div>
 
         <div class="footer">
-          <div class="footer__action--replay">
-            <button></button>
+          <div class="footer__reply">
+            <button>
+              <i class="fa fa-reply"></i>
+              <span class="hidden">返信</span>
+            </button>
+          </div>
+          <div class="footer__retweet">
+            <button>
+              <i class="fa fa-retweet"></i>
+              <span class="hidden">リツイート</span>
+            </button>
+          </div>
+          <div class="footer__heart">
+            <button>
+              <i class="fa fa-heart"></i>
+              <span class="hidden">お気に入り</span>
+            </button>
           </div>
         </div>
       </div>
@@ -37,6 +52,7 @@ li {
   padding: 9px 12px;
 }
 
+/* avatat */
 img.header__avatar {
   float:left;
   width: 48px;
@@ -46,6 +62,7 @@ img.header__avatar {
   margin-right: 10px;
 }
 
+/* screanname */
 .header__screanname, .header__time {
   font-size: 13px;
   color: #8899a6;
@@ -57,12 +74,46 @@ img.header__avatar {
   content: "\00b7";
 }
 
+/* text */
 .text {
   margin-left: 58px;
 }
 .text__content {
   margin: 0;
   white-space: pre;
+}
+
+/* footer */
+.footer {
+  margin-top: 10px;
+  margin-left: 58px;
+}
+.footer > div {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+}
+.footer button {
+  padding: 3px 5px;
+  border: 0;
+  background-color: transparent;
+  color: #aab8c2;
+  font-size: 16px;
+}
+.footer__reply:hover i {
+  color: #7708a3;
+}
+.footer__retweet:hover i {
+  color: #19cf86;
+}
+.footer__heart:hover i {
+  color: #e81c4f;
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute!important;
+  height: 1px!important;
 }
 </style>
 
