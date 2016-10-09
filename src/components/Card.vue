@@ -13,6 +13,18 @@
           <p class="text__content">{{timeline.text}}</p>
         </div>
 
+        <div class="blog-card" v-if="timeline.url">
+          <iframe
+            style="width:100%;height:155px;max-width:100%;margin:0 0 1.7rem;
+            display:block;"
+            :src="'http://hatenablog.com/embed?url=' + timeline.url"
+            width="300"
+            height="150"
+            frameborder="0"
+            scrolling="no">
+          </iframe>
+        </div>
+
         <div class="footer">
           <div class="footer__reply">
             <button>
@@ -72,6 +84,10 @@ img.header__avatar {
 }
 .header__date::before {
   content: "\00b7";
+}
+
+.blog-card {
+  margin-top: 20px;
 }
 
 /* text */

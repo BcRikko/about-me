@@ -67,7 +67,8 @@
     },
     {
       "date": "2013/01/01",
-      "text": "Black Everyday Company設立\n日々の真っ黒な生活を抜け出すべく、またずっと黒字経営が続くことを願って..."
+      "text": "Black Everyday Company設立\n日々の真っ黒な生活を抜け出すべく、またずっと黒字経営が続くことを願って...",
+      "url": "http://kuroeveryday.blogspot.com"
     },
     {
       "date": "201x/07/01",
@@ -89,15 +90,18 @@
   "products": [
     {
       "date": "2016/04/17",
-      "text": "Slack上からさくらのクラウドを操作できるbot「sacloud-bot」"
+      "text": "Slack上からさくらのクラウドを操作できるbot「sacloud-bot」",
+      "url": "http://kuroeveryday.blogspot.com/2016/04/slack-sacloud-bot.html"
     },
     {
       "date": "2015/08/03",
-      "text": "文章の構成を考えるための専用エディタ「PlotEditor」"
+      "text": "文章の構成を考えるための専用エディタ「PlotEditor」",
+      "url": "http://kuroeveryday.blogspot.com/2015/07/xhistorys.html"
     },
     {
       "date": "2015/07/12",
-      "text": "XVIDEOSの視聴履歴を管理するChrome拡張機能「XHISTORYS」"
+      "text": "XVIDEOSの視聴履歴を管理するChrome拡張機能「XHISTORYS」",
+      "url": "http://kuroeveryday.blogspot.com/2015/08/PlotEditor.html"
     }
   ]
 }

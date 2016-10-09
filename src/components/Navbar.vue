@@ -6,7 +6,7 @@
    --><div class="profile-navbar">
         <ul>
           <router-link tag="li" to="/" exact><a><span>経歴</span></a></router-link>
-          <router-link tag="li" to="/products"><a><span>作ったもの{{active}}</span></a></router-link>
+          <router-link tag="li" to="/products"><a><span>作ったもの</span></a></router-link>
         </ul>
       </div>
     </div>
