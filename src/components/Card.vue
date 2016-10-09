@@ -10,7 +10,7 @@
         </div>
 
         <div class="text">
-          <p class="text__content" v-text="timeline.text"></p>
+          <p class="text__content">{{timeline.text}}</p>
         </div>
 
         <div class="footer">
@@ -29,6 +29,10 @@ li {
   border: 1px solid #e1e8ed;
 }
 
+.card:hover {
+  background-color: #f5f8fa;
+}
+
 .content {
   padding: 9px 12px;
 }
@@ -42,12 +46,23 @@ img.header__avatar {
   margin-right: 10px;
 }
 
+.header__screanname, .header__time {
+  font-size: 13px;
+  color: #8899a6;
+}
+.header__screanname > s{
+  text-decoration: none;
+}
+.header__time::before {
+  content: "\00b7";
+}
+
 .text {
   margin-left: 58px;
 }
-
-p.text__content {
+.text__content {
   margin: 0;
+  white-space: pre;
 }
 </style>
 
