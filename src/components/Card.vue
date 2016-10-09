@@ -17,7 +17,7 @@
           <iframe
             style="width:100%;height:155px;max-width:100%;margin:0 0 1.7rem;
             display:block;"
-            :src="'http://hatenablog.com/embed?url=' + timeline.url"
+            :src="'https://hatenablog-parts.com/embed?url=' + timeline.url"
             width="300"
             height="150"
             frameborder="0"
