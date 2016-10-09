@@ -22,6 +22,11 @@
   margin: 0 auto;
 
   position: relative;
+
+  background-image: url("../assets/header.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 900px 300px;
 }
 
 .header__avatar {
