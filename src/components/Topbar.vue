@@ -1,12 +1,14 @@
 <template>
   <div class="topbar">
     <div class="global-navbar">
-      <h1 class="title"><i class="fa fa-bold"></i><span class="hidden">bcrikko.github.io<span></h1>
-      <ul>
-        <li><router-link to="/"><a><i class="fa fa-home"></i><span>ホーム</span></a></router-link></li>
-        <li><a href="https://twitter.com/bc_rikko" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
-        <li><a href="http://kuroeveryday.blogspot.com" target="_blank"><i class="fa fa-rss"></i><span>ブログ</span></a></li>
-      </ul>
+      <div class="app-container">
+        <h1 class="title"><i class="fa fa-bold"></i><span class="hidden">bcrikko.github.io<span></h1>
+        <ul>
+          <li><router-link to="/"><a><i class="fa fa-home"></i><span>ホーム</span></a></router-link></li>
+          <li><a href="https://twitter.com/bc_rikko" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+          <li><a href="http://kuroeveryday.blogspot.com" target="_blank"><i class="fa fa-rss"></i><span>ブログ</span></a></li>
+        </ul>
+      <div>
     </div>
   </div>
 </template>
@@ -44,6 +46,7 @@ h1 {
 
 ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 ul > li {

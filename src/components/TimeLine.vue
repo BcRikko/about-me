@@ -4,7 +4,7 @@
       <card v-for="timeline in timelines" :profile="profile" :timeline="timeline"></card>
     </ol>
     <div class="time-line__end">
-      <i class="fa fa-twitter"></i>
+      <i class="fa fa-bold"></i>
     </div>
   </div>
 </template>

@@ -87,6 +87,7 @@ img.header__avatar {
 }
 
 .blog-card {
+  margin-left: 58px;
   margin-top: 20px;
 }
 
