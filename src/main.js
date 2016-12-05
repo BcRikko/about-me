@@ -13,8 +13,16 @@ const router = new VueRouter({
   routes: routes
 })
 
-/* eslint-disable no-new */
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+const xhr = new window.XMLHttpRequest()
+xhr.open('get', './static/data.json', true)
+xhr.onload = function () {
+  window.profileData = JSON.parse(this.responseText)
+
+  /* eslint-disable no-new */
+  new Vue({
+    router,
+    render: h => h(App)
+  }).$mount('#app')
+}
+xhr.send()
+

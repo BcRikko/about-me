@@ -17,8 +17,6 @@ import MyHeader from './components/Header'
 import Navbar from './components/Navbar'
 import Profile from './components/Profile'
 
-import data from '../static/data.json'
-
 export default {
   components: {
     Topbar,
@@ -28,7 +26,7 @@ export default {
   },
   data () {
     return {
-      data: data
+      data: window.profileData
     }
   }
 }
